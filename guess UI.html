@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="guess.js"></script>
+    <link rel="stylesheet" type="text/css" href="guess.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+  <body>
+    <div class="firstPage">
+      <div id="info">
+        <h1 id="Header">Scegli la difficoltà</h1>
+      </div>
+      <div id="buttons">
+        <a class="Button" onclick="Difficulty(1);">Facile</a>
+        <a class="Button" onclick="Difficulty(2);">Media</a>
+        <a class="Button" onclick="Difficulty(3);">Difficile</a>
+      </div>
+      <div id="input">
+        <input type="number" id="guess"></input>
+        <input type="submit" id="submit" onclick="GuessFunction()"></input>
+      </div>
+      <p id="tentativi"></p>
+    </div>
+    <div id="restart">
+        <a class="Button" id="restart" onclick="restart();">↻Restart</a>
+    </div>
+    <script>document.getElementById("input").style.display="none";</script>
+    <script>document.getElementById("restart").style.display="none";</script>
+  </body>
+</html>
